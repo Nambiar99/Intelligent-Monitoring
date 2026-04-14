@@ -24,6 +24,13 @@ Real-world sensors often fail or lose data packets. I applied Compressive Sensin
 
 **Method**: By exploiting the sparsity of vibration signals in the Discrete Cosine Transform (DCT) domain and solving an $\ell_1$-minimization problem (Basis Pursuit), I successfully reconstructed signals from as little as 6% of the original data.
 
+## Optimal Sensor Placement
+To reconstruct the system state with the fewest sensors possible, I implemented a strategy based on Singular Value Decomposition (SVD) and Proper Orthogonal Decomposition (POD).
+
+**The Process**: I extracted the dominant spatial modes of the system and used Pivoted QR Decomposition to identify the most linearly independent points.
+
+**The Result**: This ensures that the selected sensor locations provide the maximum possible information about the system's dynamics, eliminating redundant hardware and reducing costs.
+
 
 ## Data
 The simulation data set is available on Zenodo
