@@ -4,3 +4,9 @@ Developing a data-driven "Digital Twin" to predict and reconstruct structural vi
 Aging Infrastructure & Wind-Induced Fatigue Text: Overhead powerlines are the backbone of the energy grid, but they are under constant attack from Wind-Induced Vibrations (WIV), specifically Aeolian vibrations. These high-frequency oscillations cause cumulative fatigue, leading to mechanical wear and catastrophic failures—such as the 2018 Camp Fire in California.
 
 Traditional mitigation (like passive dampers) is reactive and lacks adaptability. To move toward proactive asset management, we need a way to monitor these vibrations in real-time. However, placing sensors along every inch of a thousand-mile grid is physically and financially impossible.
+
+## Data - Driven Modeling
+Stable Reduced-Order Modeling via DMD Text: Physical simulations (FEM) are too slow for real-time use. I leveraged Dynamic Mode Decomposition (DMD) to build a linear, reduced-order model directly from time-series data.
+
+The Stability Challenge: Naive DMD often produces unstable models (eigenvalues outside the unit circle).
+The Solution: I integrated Tikhonov Regularization into the DMD framework. By adding a penalty term to the objective function, I stabilized the state-transition matrix without sacrificing the fidelity of the modal structures.
