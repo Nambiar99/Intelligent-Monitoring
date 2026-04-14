@@ -8,7 +8,7 @@ Traditional mitigation (like passive dampers) is reactive and lacks adaptability
 ## Data - Driven Modeling
 Stable Reduced-Order Modeling via DMD Text: Physical simulations (FEM) are too slow for real-time use. I leveraged Dynamic Mode Decomposition (DMD) to build a linear, reduced-order model directly from time-series data.
 
-###The Stability Challenge 
+### The Stability Challenge 
 Naive DMD often produces unstable models (eigenvalues outside the unit circle).
-###The Solution 
+### The Solution 
 I integrated Tikhonov Regularization into the DMD framework. By adding a penalty term to the objective function, I stabilized the state-transition matrix without sacrificing the fidelity of the modal structures.
