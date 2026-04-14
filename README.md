@@ -27,3 +27,5 @@ Real-world sensors often fail or lose data packets. I applied Compressive Sensin
 
 ## Data
 The simulation data set is available on Zenodo
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19581918.svg)](https://doi.org/10.5281/zenodo.19581918)
