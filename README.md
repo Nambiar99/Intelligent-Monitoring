@@ -23,3 +23,7 @@ To track the state of the powerline in real-time under partial observability, I 
 Real-world sensors often fail or lose data packets. I applied Compressive Sensing (CS) to ensure the system remains operational during data loss.
 
 **Method**: By exploiting the sparsity of vibration signals in the Discrete Cosine Transform (DCT) domain and solving an $\ell_1$-minimization problem (Basis Pursuit), I successfully reconstructed signals from as little as 6% of the original data.
+
+
+## Data
+The simulation data set is available on Zenodo
